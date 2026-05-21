@@ -15,6 +15,10 @@ if($conn->connect_error){
     echo "<script> console.log('Banco> OK!') </script>";
 }
 
+if($_SERVER["REQUEST_METHOD_"] == "POST"){
+    $usuario = $_POST["usuario"];
+    $senha = $_POST["senha"];
+}
 
 ?>
 
